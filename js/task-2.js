@@ -13,9 +13,7 @@ class Storage {
     }
 
     removeItem(itemToRemove){
-        return this.#items = this.#items.filter((value, index) => {
-            return value !== itemToRemove ? value : ""
-        });
+        return this.#items = this.#items.filter(value => value !== itemToRemove);
     }
 }
 
